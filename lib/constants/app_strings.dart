@@ -135,8 +135,6 @@ class AppStrings {
       
       // Notifications
       'newBooking': 'حجز جديد',
-      'bookingConfirmed': 'تم تأكيد الحجز',
-      'bookingCancelled': 'تم إلغاء الحجز',
       'newMessage': 'رسالة جديدة',
       'welcomeMessage': 'مرحباً بك في GoDarna',
     },
@@ -272,9 +270,6 @@ class AppStrings {
       'passwordsDoNotMatch': 'Les mots de passe ne correspondent pas',
       
       // Notifications
-      'newBooking': 'Nouvelle réservation',
-      'bookingConfirmed': 'Réservation confirmée',
-      'bookingCancelled': 'Réservation annulée',
       'newMessage': 'Nouveau message',
       'welcomeMessage': 'Bienvenue sur GoDarna',
     },
