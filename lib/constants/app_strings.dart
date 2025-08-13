@@ -24,8 +24,8 @@ class AppStrings {
       // Navigation
       'home': 'الرئيسية',
       'search': 'البحث',
-      'bookings': 'الحجوزات',
-      'profile': 'الملف الشخصي',
+      'navBookings': 'الحجوزات',
+      'navProfile': 'الملف الشخصي',
       'addProperty': 'إضافة عقار',
       'myProperties': 'عقاراتي',
       
@@ -160,8 +160,8 @@ class AppStrings {
       // Navigation
       'home': 'Accueil',
       'search': 'Recherche',
-      'bookings': 'Réservations',
-      'profile': 'Profil',
+      'navBookings': 'Réservations',
+      'navProfile': 'Profil',
       'addProperty': 'Ajouter une propriété',
       'myProperties': 'Mes propriétés',
       
