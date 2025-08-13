@@ -11,6 +11,8 @@ import 'package:godarna/widgets/filter_bottom_sheet.dart';
 import 'package:godarna/screens/property/property_details_screen.dart';
 import 'package:godarna/screens/property/add_property_screen.dart';
 import 'package:godarna/screens/profile/profile_screen.dart';
+import 'package:godarna/screens/main/search_screen.dart';
+import 'package:godarna/screens/main/bookings_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -411,121 +413,11 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Widget _buildBookingsPage() {
-    return Scaffold(
-      backgroundColor: AppColors.backgroundGrey,
-      body: SafeArea(
-        child: Column(
-          children: [
-            // Header
-            Container(
-              padding: const EdgeInsets.all(20),
-              decoration: const BoxDecoration(
-                color: Colors.white,
-                boxShadow: [
-                  BoxShadow(
-                    color: AppColors.shadowLight,
-                    blurRadius: 10,
-                    offset: Offset(0, 2),
-                  ),
-                ],
-              ),
-              child: Text(
-                AppStrings.getString('bookings', context),
-                style: const TextStyle(
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold,
-                  color: AppColors.textPrimary,
-                ),
-              ),
-            ),
-            
-            // Bookings Content
-            Expanded(
-              child: Center(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(
-                      Icons.bookmark_rounded,
-                      size: 64,
-                      color: AppColors.textLight,
-                    ),
-                    const SizedBox(height: 16),
-                    Text(
-                      'قريباً...',
-                      style: TextStyle(
-                        color: AppColors.textLight,
-                        fontSize: 16,
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
+    return const BookingsScreen();
   }
 
   Widget _buildProfilePage() {
-    return Scaffold(
-      backgroundColor: AppColors.backgroundGrey,
-      body: SafeArea(
-        child: Column(
-          children: [
-            // Header
-            Container(
-              padding: const EdgeInsets.all(20),
-              decoration: const BoxDecoration(
-                color: Colors.white,
-                boxShadow: [
-                  BoxShadow(
-                    color: AppColors.shadowLight,
-                    blurRadius: 10,
-                    offset: Offset(0, 2),
-                  ),
-                ],
-              ),
-              child: Text(
-                AppStrings.getString('profile', context),
-                style: const TextStyle(
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold,
-                  color: AppColors.textPrimary,
-                ),
-              ),
-            ),
-            
-            // Profile Content
-            Expanded(
-              child: Center(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(
-                      Icons.person_rounded,
-                      size: 64,
-                      color: AppColors.textLight,
-                    ),
-                    const SizedBox(height: 16),
-                    Text(
-                      'قريباً...',
-                      style: TextStyle(
-                        color: AppColors.textLight,
-                        fontSize: 16,
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
+    return const ProfileScreen();
   }
 
   void _showFilterBottomSheet() {
