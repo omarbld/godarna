@@ -20,6 +20,7 @@ class AppStrings {
       'otpInvalid': 'رمز التحقق غير صحيح',
       'loginSuccess': 'تم تسجيل الدخول بنجاح',
       'logout': 'تسجيل الخروج',
+      'loginRequired': 'تسجيل الدخول مطلوب',
       
       // Navigation
       'home': 'الرئيسية',
@@ -53,6 +54,10 @@ class AppStrings {
       'photos': 'الصور',
       'addPhoto': 'إضافة صورة',
       'removePhoto': 'حذف الصورة',
+      'noPropertiesFound': 'لا توجد عقارات',
+      'noSearchResults': 'لا توجد نتائج بحث',
+      'noPropertiesYet': 'لا توجد عقارات بعد',
+      'addFirstProperty': 'أضف أول عقار',
       
       // Search & Filters
       'searchProperties': 'البحث عن عقارات',
@@ -69,6 +74,7 @@ class AppStrings {
       'book': 'حجز',
       'booking': 'حجز',
       'bookings': 'الحجوزات',
+      'myBookings': 'حجوزاتي',
       'checkIn': 'تاريخ الوصول',
       'checkOut': 'تاريخ المغادرة',
       'nights': 'الليالي',
@@ -78,6 +84,9 @@ class AppStrings {
       'bookingCancelled': 'تم إلغاء الحجز',
       'cancelBooking': 'إلغاء الحجز',
       'confirmBooking': 'تأكيد الحجز',
+      'upcoming': 'قادمة',
+      'active': 'نشطة',
+      'completed': 'مكتملة',
       
       // Payment
       'payment': 'الدفع',
@@ -156,6 +165,7 @@ class AppStrings {
       'otpInvalid': 'Code de vérification incorrect',
       'loginSuccess': 'Connexion réussie',
       'logout': 'Déconnexion',
+      'loginRequired': 'Connexion requise',
       
       // Navigation
       'home': 'Accueil',
@@ -189,6 +199,10 @@ class AppStrings {
       'photos': 'Photos',
       'addPhoto': 'Ajouter une photo',
       'removePhoto': 'Supprimer la photo',
+      'noPropertiesFound': 'Aucune propriété trouvée',
+      'noSearchResults': 'Aucun résultat de recherche',
+      'noPropertiesYet': 'Aucune propriété encore',
+      'addFirstProperty': 'Ajouter la première propriété',
       
       // Search & Filters
       'searchProperties': 'Rechercher des propriétés',
@@ -205,6 +219,7 @@ class AppStrings {
       'book': 'Réserver',
       'booking': 'Réservation',
       'bookings': 'Réservations',
+      'myBookings': 'Mes réservations',
       'checkIn': 'Date d\'arrivée',
       'checkOut': 'Date de départ',
       'nights': 'Nuits',
@@ -214,6 +229,9 @@ class AppStrings {
       'bookingCancelled': 'Réservation annulée',
       'cancelBooking': 'Annuler la réservation',
       'confirmBooking': 'Confirmer la réservation',
+      'upcoming': 'À venir',
+      'active': 'Actives',
+      'completed': 'Terminées',
       
       // Payment
       'payment': 'Paiement',
@@ -270,6 +288,7 @@ class AppStrings {
       'passwordsDoNotMatch': 'Les mots de passe ne correspondent pas',
       
       // Notifications
+      'newBooking': 'Nouvelle réservation',
       'newMessage': 'Nouveau message',
       'welcomeMessage': 'Bienvenue sur GoDarna',
     },
