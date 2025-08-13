@@ -342,7 +342,7 @@ class BookingService {
           .select()
           .eq(userIdField, userId)
           .gte('check_in', now.toIso8601String())
-          .in_('status', ['pending', 'confirmed'])
+          .inFilter('status', ['pending', 'confirmed'])
           .order('check_in', ascending: true);
 
       if (response != null) {

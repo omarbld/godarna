@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:godarna/models/property_model.dart';
 import 'package:godarna/providers/booking_provider.dart';
+import 'package:godarna/providers/auth_provider.dart';
 import 'package:godarna/constants/app_colors.dart';
 import 'package:godarna/constants/app_strings.dart';
 import 'package:godarna/widgets/custom_button.dart';
@@ -84,8 +85,11 @@ class _CreateBookingScreenState extends State<CreateBookingScreen> {
     try {
       final bookingProvider = Provider.of<BookingProvider>(context, listen: false);
       
+      final authProvider = Provider.of<AuthProvider>(context, listen: false);
       final success = await bookingProvider.createBooking(
         propertyId: widget.property.id,
+        tenantId: authProvider.currentUser!.id,
+        hostId: widget.property.hostId,
         checkIn: _checkInDate!,
         checkOut: _checkOutDate!,
         nights: _nights,

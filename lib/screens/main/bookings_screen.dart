@@ -23,7 +23,10 @@ class _BookingsScreenState extends State<BookingsScreen> with SingleTickerProvid
     super.initState();
     _tabController = TabController(length: 3, vsync: this);
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      Provider.of<BookingProvider>(context, listen: false).fetchUserBookings();
+      final authProvider = Provider.of<AuthProvider>(context, listen: false);
+      if (authProvider.isAuthenticated && authProvider.currentUser != null) {
+        Provider.of<BookingProvider>(context, listen: false).fetchUserBookings(authProvider.currentUser!.id);
+      }
     });
   }
 

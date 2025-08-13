@@ -73,7 +73,7 @@ class AppStrings {
       // Booking
       'book': 'حجز',
       'booking': 'حجز',
-      'bookings': 'الحجوزات',
+      'bookingList': 'الحجوزات',
       'myBookings': 'حجوزاتي',
       'checkIn': 'تاريخ الوصول',
       'checkOut': 'تاريخ المغادرة',

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:godarna/providers/booking_provider.dart';
+import 'package:godarna/providers/auth_provider.dart';
 import 'package:godarna/constants/app_colors.dart';
 import 'package:godarna/constants/app_strings.dart';
 import 'package:godarna/widgets/custom_button.dart';
@@ -21,7 +22,10 @@ class _MyBookingsScreenState extends State<MyBookingsScreen> with SingleTickerPr
     super.initState();
     _tabController = TabController(length: 3, vsync: this);
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      Provider.of<BookingProvider>(context, listen: false).fetchUserBookings();
+      final authProvider = Provider.of<AuthProvider>(context, listen: false);
+      if (authProvider.isAuthenticated && authProvider.currentUser != null) {
+        Provider.of<BookingProvider>(context, listen: false).fetchUserBookings(authProvider.currentUser!.id);
+      }
     });
   }
 

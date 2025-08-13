@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:godarna/providers/property_provider.dart';
+import 'package:godarna/providers/auth_provider.dart';
 import 'package:godarna/constants/app_colors.dart';
 import 'package:godarna/constants/app_strings.dart';
 import 'package:godarna/widgets/custom_button.dart';
@@ -20,7 +21,10 @@ class _MyPropertiesScreenState extends State<MyPropertiesScreen> {
   void initState() {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      Provider.of<PropertyProvider>(context, listen: false).fetchMyProperties();
+      final authProvider = Provider.of<AuthProvider>(context, listen: false);
+      if (authProvider.isAuthenticated && authProvider.currentUser != null) {
+        Provider.of<PropertyProvider>(context, listen: false).fetchMyProperties(authProvider.currentUser!.id);
+      }
     });
   }
 

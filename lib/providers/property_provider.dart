@@ -10,6 +10,7 @@ class PropertyProvider extends ChangeNotifier {
   PropertyModel? _selectedProperty;
   bool _isLoading = false;
   String? _error;
+  String? _currentHostId;
   
   // Search and filter state
   String _searchQuery = '';
@@ -27,6 +28,9 @@ class PropertyProvider extends ChangeNotifier {
   PropertyModel? get selectedProperty => _selectedProperty;
   bool get isLoading => _isLoading;
   String? get error => _error;
+  
+  // My properties (for host)
+  List<PropertyModel> get myProperties => _properties.where((p) => p.hostId == _currentHostId).toList();
   
   // Search and filter getters
   String get searchQuery => _searchQuery;
@@ -72,6 +76,23 @@ class PropertyProvider extends ChangeNotifier {
       _setLoading(true);
       _clearError();
       
+      final properties = await _propertyService.getPropertiesByHost(hostId);
+      _properties = properties;
+      _applyFilters();
+    } catch (e) {
+      _setError(e.toString());
+    } finally {
+      _setLoading(false);
+    }
+  }
+
+  // Fetch my properties (for current host)
+  Future<void> fetchMyProperties(String hostId) async {
+    try {
+      _setLoading(true);
+      _clearError();
+      
+      _currentHostId = hostId;
       final properties = await _propertyService.getPropertiesByHost(hostId);
       _properties = properties;
       _applyFilters();

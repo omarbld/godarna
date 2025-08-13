@@ -20,6 +20,32 @@ class BookingProvider extends ChangeNotifier {
   bool get isLoading => _isLoading;
   String? get error => _error;
 
+  // Filtered bookings
+  List<BookingModel> get upcomingBookings {
+    final now = DateTime.now();
+    return _userBookings.where((booking) {
+      final checkIn = DateTime.parse(booking.checkIn);
+      return checkIn.isAfter(now) && booking.status == 'confirmed';
+    }).toList();
+  }
+
+  List<BookingModel> get activeBookings {
+    final now = DateTime.now();
+    return _userBookings.where((booking) {
+      final checkIn = DateTime.parse(booking.checkIn);
+      final checkOut = DateTime.parse(booking.checkOut);
+      return checkIn.isBefore(now) && checkOut.isAfter(now) && booking.status == 'confirmed';
+    }).toList();
+  }
+
+  List<BookingModel> get completedBookings {
+    final now = DateTime.now();
+    return _userBookings.where((booking) {
+      final checkOut = DateTime.parse(booking.checkOut);
+      return checkOut.isBefore(now) && booking.status == 'confirmed';
+    }).toList();
+  }
+
   // Initialize bookings
   Future<void> initialize() async {
     try {
