@@ -263,7 +263,7 @@ class AppStrings {
       'delete': 'Supprimer',
       'edit': 'Modifier',
       'add': 'Ajouter',
-      'remove': 'Supprimer',
+      'remove': 'Retirer',
       'confirm': 'Confirmer',
       'back': 'Retour',
       'next': 'Suivant',
