@@ -1,0 +1,80 @@
+{
+  "auth": {
+    "sign_in": "Se connecter",
+    "enter_email": "Entrez votre email",
+    "send_code": "Envoyer le code",
+    "enter_code": "Entrez le code reçu par email",
+    "code_placeholder": "Ex: 123456",
+    "verify": "Vérifier",
+    "sign_out": "Se déconnecter",
+    "sign_in_first": "Veuillez vous connecter d'abord"
+  },
+  "common": {
+    "switch_language": "Changer la langue: Ar/Fr",
+    "required": "Champ obligatoire",
+    "save": "Enregistrer",
+    "apply": "Appliquer"
+  },
+  "home": {
+    "title": "GoDarna",
+    "search_hint": "Rechercher une ville ou une adresse",
+    "filters": "Filtres",
+    "my_bookings": "Mes réservations",
+    "profile": "Profil",
+    "add_listing": "Ajouter un bien",
+    "no_results": "Aucun résultat"
+  },
+  "listing": {
+    "details": "Détails du bien",
+    "not_found": "Bien introuvable",
+    "bedrooms": "{0} chambres",
+    "bathrooms": "{0} salles de bain",
+    "max_guests": "Jusqu'à {0} invités",
+    "price": "Prix",
+    "night": "nuit",
+    "title": "Titre",
+    "description": "Description",
+    "price_per_night": "Prix par nuit (MAD)",
+    "city": "Ville",
+    "address": "Adresse",
+    "bedrooms_short": "Ch.",
+    "bathrooms_short": "Sdb",
+    "guests_short": "Inv.",
+    "image_url": "URL de l'image",
+    "published": "Publié"
+  },
+  "booking": {
+    "select_dates": "Choisir les dates",
+    "select_dates_first": "Veuillez choisir les dates",
+    "guests": "Nombre d'invités",
+    "book_now": "Réserver",
+    "my_bookings": "Mes réservations",
+    "status": "Statut"
+  },
+  "payment": {
+    "title": "Paiement",
+    "method": "Méthode de paiement",
+    "cod": "Paiement à l'arrivée",
+    "cod_hint": "Payez en espèces à l'arrivée",
+    "cod_confirmed": "Réservation envoyée, payez à l'arrivée",
+    "online": "Paiement en ligne",
+    "online_hint": "Bientôt",
+    "online_coming": "Le paiement en ligne arrive bientôt",
+    "booking_reference": "Référence: {0}",
+    "status": "Statut du paiement"
+  },
+  "profile": {
+    "title": "Mon profil",
+    "role": "Rôle: {0}"
+  },
+  "host": {
+    "add_listing": "Ajouter un bien",
+    "listing_created": "Bien créé avec succès"
+  },
+  "authx": {
+    "otp_sent": "Code envoyé par email"
+  },
+  "errors": {
+    "network": "Problème réseau, réessayez plus tard"
+  }
+}
