@@ -434,12 +434,6 @@ class _PaymentScreenState extends State<PaymentScreen> {
     switch (iconName) {
       case 'money':
         return Icons.money;
-      case 'credit_card':
-        return Icons.credit_card;
-      case 'account_balance':
-        return Icons.account_balance;
-      case 'smartphone':
-        return Icons.smartphone;
       default:
         return Icons.payment;
     }

@@ -514,12 +514,6 @@ class _PaymentHistoryScreenState extends State<PaymentHistoryScreen> {
     switch (method) {
       case 'cash_on_delivery':
         return 'نقداً عند التسليم';
-      case 'online':
-        return 'دفع إلكتروني';
-      case 'bank_transfer':
-        return 'تحويل بنكي';
-      case 'mobile_money':
-        return 'محفظة إلكترونية';
       default:
         return method;
     }
