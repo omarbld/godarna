@@ -1,0 +1,80 @@
+{
+  "auth": {
+    "sign_in": "تسجيل الدخول",
+    "enter_email": "دخل الإيميل ديالك",
+    "send_code": "رسل الكود",
+    "enter_code": "دخل الكود لي جاك فالإيميل",
+    "code_placeholder": "مثال: 123456",
+    "verify": "تأكيد",
+    "sign_out": "تسجيل الخروج",
+    "sign_in_first": "المرجو تسجيل الدخول أولاً"
+  },
+  "common": {
+    "switch_language": "بدّل اللغة: العربية/الفرنسية",
+    "required": "هذا الحقل ضروري",
+    "save": "حفظ",
+    "apply": "تطبيق"
+  },
+  "home": {
+    "title": "GoDarna",
+    "search_hint": "قلب على مدينة أو عنوان",
+    "filters": "فلاتر",
+    "my_bookings": "حجوزاتي",
+    "profile": "الحساب",
+    "add_listing": "زيد إعلان",
+    "no_results": "ما كايناش نتائج"
+  },
+  "listing": {
+    "details": "تفاصيل الإعلان",
+    "not_found": "ما لقيناش الإعلان",
+    "bedrooms": "{0} غرف",
+    "bathrooms": "{0} حمامات",
+    "max_guests": "حتى {0} ضيوف",
+    "price": "الثمن",
+    "night": "الليلة",
+    "title": "العنوان",
+    "description": "الوصف",
+    "price_per_night": "الثمن فليلة (MAD)",
+    "city": "المدينة",
+    "address": "العنوان",
+    "bedrooms_short": "غرف",
+    "bathrooms_short": "حمامات",
+    "guests_short": "ضيوف",
+    "image_url": "رابط الصورة",
+    "published": "منشور"
+  },
+  "booking": {
+    "select_dates": "ختار التواريخ",
+    "select_dates_first": "المرجو اختيار التواريخ",
+    "guests": "عدد الضيوف",
+    "book_now": "احجز دابا",
+    "my_bookings": "حجوزاتي",
+    "status": "الحالة"
+  },
+  "payment": {
+    "title": "الدفع",
+    "method": "طريقة الدفع",
+    "cod": "الدفع عند الوصول",
+    "cod_hint": "غادي تخلّص فاش توصل للمكان",
+    "cod_confirmed": "تم إرسال الحجز، تخلص عند الوصول",
+    "online": "الدفع أونلاين",
+    "online_hint": "قريبًا",
+    "online_coming": "الدفع الأونلاين غادي يتزاد قريبًا",
+    "booking_reference": "مرجع الحجز: {0}",
+    "status": "حالة الدفع"
+  },
+  "profile": {
+    "title": "الحساب ديالي",
+    "role": "الدور: {0}"
+  },
+  "host": {
+    "add_listing": "إضافة إعلان",
+    "listing_created": "تزاد الإعلان بنجاح"
+  },
+  "authx": {
+    "otp_sent": "ترسل الكود للبريد"
+  },
+  "errors": {
+    "network": "مشكلة فالسات، جرّب من بعد"
+  }
+}
