@@ -13,11 +13,12 @@ import 'package:godarna/constants/app_strings.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   
-  // Initialize Supabase
-  await Supabase.initialize(
-    url: 'YOUR_SUPABASE_URL',
-    anonKey: 'YOUR_SUPABASE_ANON_KEY',
-  );
+                // Initialize Supabase
+              // TODO: Replace with your actual Supabase credentials
+              await Supabase.initialize(
+                url: 'https://your-project-id.supabase.co',
+                anonKey: 'your-anon-key-here',
+              );
   
   runApp(const GoDarnaApp());
 }
