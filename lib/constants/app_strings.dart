@@ -62,10 +62,10 @@ class AppStrings {
       // Search & Filters
       'searchProperties': 'البحث عن عقارات',
       'filters': 'الفلاتر',
-      'priceRange': 'نطاق السعر',
+      'priceRangeFilter': 'نطاق السعر',
       'propertyTypeFilter': 'نوع العقار',
       'locationFilter': 'الموقع',
-      'dateRange': 'نطاق التاريخ',
+      'dateRangeFilter': 'نطاق التاريخ',
       'guestsFilter': 'عدد الضيوف',
       'applyFilters': 'تطبيق الفلاتر',
       'clearFilters': 'مسح الفلاتر',
